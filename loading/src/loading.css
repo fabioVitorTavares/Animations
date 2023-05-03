@@ -1,0 +1,68 @@
+body {
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    height: 100px;
+    border: 1px solid black;
+}
+
+.l{
+    font-size: 46px;
+    position: relative;
+    color: white;
+}
+
+.l1 {
+    animation: move 2s  ease-in-out infinite ;    
+}
+
+.l2 {
+    animation: move 2s 0.2s ease-in-out infinite ;
+}
+
+.l3 {
+    animation: move 2s 0.4s ease-in-out infinite ;
+}
+
+.l4 {
+    animation: move 2s 0.6s ease-in-out infinite ;
+}
+
+.l5 {
+    animation: move 2s 0.8s ease-in-out infinite ;
+}
+
+.l6 {
+    animation: move 2s 1s ease-in-out infinite ; 
+}
+
+.l7 {
+    animation: move 2s 1.2s ease-in-out infinite ;    
+}
+
+@keyframes move {
+    100%{
+        opacity: 0;
+        left: -50%;
+        font-size: 15px;
+    }
+    60%{
+        opacity: 1;
+        font-size: 155px;
+    }    
+    40%{
+        opacity: 1;
+        font-size: 155px;
+    }
+    0%{
+        opacity: 0;
+        left: 50%;
+        font-size: 15px;
+    }
+}
+

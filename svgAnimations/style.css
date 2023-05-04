@@ -1,0 +1,60 @@
+img, svg {
+    border: solid 1px black;
+    margin: 10px;
+}
+
+
+
+#load{
+    stroke-dasharray: 571;
+    stroke-dashoffset: 0;
+    animation: dash 3s ease-in-out infinite;
+}
+
+@keyframes dash {
+
+    0%{
+      stroke-dashoffset: 571;
+    }
+    33%{
+      stroke-dashoffset: 0;
+
+    }
+    100%{
+      stroke-dashoffset: -571;        
+    }
+}
+
+
+
+#animation3 #path1{
+    stroke-dasharray: 650;
+    stroke-dashoffset: 0;
+    animation: move 5s normal;
+}
+
+@keyframes move {
+    from{
+        stroke-dashoffset: 650;
+    }
+
+    to{
+        stroke-dashoffset: 0;        
+    }
+}
+
+#animation3 #path2{
+    stroke-dasharray: 1490;
+    stroke-dashoffset: 0;
+    animation: move2 3s normal;
+}
+
+@keyframes move2 {
+    from{
+        stroke-dashoffset: 1490;
+    }
+
+    to{
+        stroke-dashoffset: 0;        
+    }
+}

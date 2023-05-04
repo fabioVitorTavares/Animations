@@ -1,0 +1,14 @@
+
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    width="200" 
+    height="200" 
+    stroke="#1492D9"
+    stroke-width="20" 
+    fill="none">
+
+    <path 
+        d="M 100 10 C 220,10 220,190 100,190 C-20, 190 -20,10 100,10"
+    />
+</svg>

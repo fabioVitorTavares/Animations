@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.botao-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  height: 200px;
+  border-radius: 20px;
+  border: 2px solid red;
+  background-color: rgb(227, 231, 235);
+  cursor: pointer;
+  padding-left: 100px;
+}
+
+.letras {
+  font-size: 60px;
+  position: relative;
+  color: red;
+  font-weight: 900;
+}
+
+.delete-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 100%;
+  padding-left: 50px;
+  letter-spacing: 10px;
+  overflow: hidden;  
+}
+/* 
+.letra-1 {
+  animation: move 1s ease 1s forwards;
+}
+
+.letra-2{
+  animation: move 1s ease 0.8s forwards ;
+}
+
+.letra-3{
+  animation: move 1s ease 0.6s forwards;
+}
+
+.letra-4{
+  animation: move 1s ease 0.4s forwards;
+}
+
+.letra-5{
+  animation: move 1s ease 0.2s forwards;
+}
+
+.letra-6{
+  animation: move 1s ease forwards;
+} */
+
+@keyframes move {
+  0% {
+   left: 0;  
+   top: 0;  
+  }
+  100%{
+    left: 700px;
+    top: 50px;
+  }
+}
+
+
+
+.lixeira-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+  right: 0;
+}
+
+.tampa {
+  position: absolute;
+  top: 45%;
+  z-index: 2;
+  /* animation: open 2s ease; */
+}
+
+.lixeira {
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  /* animation: inclination 2s ease; */
+}
+
+@keyframes open {
+  0%{
+    top: 45%;
+  }
+
+  10%{
+    top: 0%;
+    rotate: 65deg;
+  }
+  90%{
+    top: 0%;
+    rotate: 65deg;
+  }
+  100%{
+    top: 45%;
+  }
+}
+
+@keyframes inclination {
+  0%{
+    rotate: 0deg;
+  }
+  10%{
+    rotate: -65deg;
+  }
+  90%{
+    rotate: -65deg;
+  }
+  100%{
+    rotate: 0deg;
+  }
+}

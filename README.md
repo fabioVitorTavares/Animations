@@ -1,4 +1,3 @@
 # Animations
 
-
-Animations with react using css
+Animations with react using css and @mediaquerys

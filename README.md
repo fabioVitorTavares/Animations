@@ -1,3 +1,4 @@
 # Animations
 
-Animations using css
+
+Animations with react using css
